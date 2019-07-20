@@ -1,8 +1,9 @@
 Package: LBLGXE
 Type: Package
-Title: Bayesian Lasso for detecting Rare (or Common) Haplotype
-        Association and their interactions with Environmental
-        Covariates with one single phenotype or two correlated binary phenotypes
+Title: Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
+        Association and their Interactions with Environmental
+        Covariates with One Single Phenotype or Two Correlated Binary Phenotypes 
+        (without Environmental Covariate)
 Version: 1.4
 Author: Xiaochen Yuan, Yuan Zhang, Shuang Xia, Swati Biswas, and Shili Lin
 Maintainer: Xiaochen Yuan <xxy142030@utdallas.edu>
