@@ -1,8 +1,8 @@
 
-#' Title Logistic Bayesian Lasso for detecting rare (or common) haplotype
-#' association and their interactions with environmental covariates with a single
-#' phenotype or haplotype association with two correlated phenotypes
-#' (without environmental covariate)
+#' Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
+#' Association and their Interactions with Environmental Covariates with One Single
+#' Phenotype or Haplotype Association with Two Correlated Phenotypes
+#' (without Environmental Covariate)
 #' @param dat the non-SNP and SNP data as a data frame. If the twoBinaryPheno option is FALSE (default) and the complex.sampling option is FALSE (default), the first column of the non-SNP data is the affection status, others (optional) are environmental covariates; if the complex.sampling option is set to be TRUE, the non-SNP data should consists of affection status, sampling weights, stratifying variables and environmental covariates (optional). If the twoBinaryPheno option is set to be TRUE, then there should be no environmental covariate and the first two columns should be two binary phenotypes. SNP data should comprise the last 2*numSNPs columns (allelic format) or last numSNPs columns (genotypic format). Missing allelic data should be coded as NA or "" and missing genotypic data should be coded as, e.g., "A" if one allele is missing and "" if both alleles are missing. Covariates (including stratifying variables) should be coded as dummy variables, e.g., 0, 1, etc.
 #' @param numSNPs number of SNPs per haplotype.
 #' @param maxMissingGenos maximum number of single-locus genotypes with missing data to allow for each subject. (Subjects with more missing data, or with missing non-SNP data are removed.) The default is 1.

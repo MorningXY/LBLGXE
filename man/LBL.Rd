@@ -2,10 +2,10 @@
 % Please edit documentation in R/LBL.R
 \name{LBL}
 \alias{LBL}
-\title{Title Logistic Bayesian Lasso for detecting rare (or common) haplotype
-association and their interactions with environmental covariates with a single
-phenotype or haplotype association with two correlated phenotypes
-(without environmental covariate)}
+\title{Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
+Association and their Interactions with Environmental Covariates with One Single
+Phenotype or Haplotype Association with Two Correlated Phenotypes
+(without Environmental Covariate)}
 \usage{
 LBL(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE,
   haplo.baseline = "missing", cov.baseline = "missing",
