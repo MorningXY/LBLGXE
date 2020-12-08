@@ -1,9 +1,9 @@
 {
-    "path" : "~/LBLGXE",
-    "sortOrder" : [
+    "path": "~/LBLGXE_v15",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }

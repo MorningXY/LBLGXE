@@ -2,10 +2,7 @@
 % Please edit documentation in R/LBL.R
 \name{LBL}
 \alias{LBL}
-\title{Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
-Association and their Interactions with Environmental Covariates with One Single
-Phenotype or Haplotype Association with Two Correlated Phenotypes
-(without Environmental Covariate)}
+\title{Logistic Bayesian Lasso for Rare (or Common) Haplotype Association}
 \usage{
 LBL(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE,
   haplo.baseline = "missing", cov.baseline = "missing",
@@ -143,20 +140,20 @@ library(dummies)
 # use smaller numbers for a quick check to make sure the package is loaded properly. With
 # such shorts runs, the results may not be meaningful.
 ## Analyzing LBL.ex1 under G-E independence assumption.
-out.LBL<-LBL(LBL.ex1, numSNPs=5, burn.in=100, num.it=1000)
+out.LBL<-LBL(LBL.ex1, numSNPs=5, burn.in=0, num.it=5)
 
 ## Analyzing LBL.ex1 under uncertainty of G-E independence assumption.
-out.LBL<-LBL(LBL.ex1, numSNPs=5, interaction.model="u", burn.in=100, num.it=1000)
+out.LBL<-LBL(LBL.ex1, numSNPs=5, interaction.model="u", burn.in=0, num.it=5)
 
 ## Analyzing LBL.ex2 which comes from complex sampling design with frequency matching.
 out.LBL<-LBL(LBL.ex2, numSNPs=5, complex.sampling=TRUE, n.stra=1, names.dep="stra",
-burn.in=100, num.it=1000)
+burn.in=0, num.it=5)
 
 ## Analyzing LBL.ex3 using the bivariate LBL method.
-out.LBL<-LBL(LBL.ex3, numSNPs=5, twoBinaryPheno=TRUE, burn.in=100, num.it=1000)
+out.LBL<-LBL(LBL.ex3, numSNPs=5, twoBinaryPheno=TRUE, burn.in=0, num.it=5)
 }
 \references{
-Yuan X and Biswas S. Bivariate Logistic Bayesian LASSO for Detecting Rare Haplotype Association with Two Correlated Phenotypes. Under review.
+Yuan X and Biswas S (2019). Bivariate Logistic Bayesian LASSO for Detecting Rare Haplotype Association with Two Correlated Phenotypes. Genetic Epidemiology, in press.
 
 Zhang Y, Hofmann J, Purdue M, Lin S, and Biswas S.
 Logistic Bayesian LASSO for Genetic Association Analysis of Data from Complex Sampling Designs. Journal of Human Genetics, 62:819-829.

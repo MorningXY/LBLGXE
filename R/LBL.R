@@ -1,8 +1,5 @@
 
-#' Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
-#' Association and their Interactions with Environmental Covariates with One Single
-#' Phenotype or Haplotype Association with Two Correlated Phenotypes
-#' (without Environmental Covariate)
+#' Logistic Bayesian Lasso for Rare (or Common) Haplotype Association
 #' @param dat the non-SNP and SNP data as a data frame. If the twoBinaryPheno option is FALSE (default) and the complex.sampling option is FALSE (default), the first column of the non-SNP data is the affection status, others (optional) are environmental covariates; if the complex.sampling option is set to be TRUE, the non-SNP data should consists of affection status, sampling weights, stratifying variables and environmental covariates (optional). If the twoBinaryPheno option is set to be TRUE, then there should be no environmental covariate and the first two columns should be two binary phenotypes. SNP data should comprise the last 2*numSNPs columns (allelic format) or last numSNPs columns (genotypic format). Missing allelic data should be coded as NA or "" and missing genotypic data should be coded as, e.g., "A" if one allele is missing and "" if both alleles are missing. Covariates (including stratifying variables) should be coded as dummy variables, e.g., 0, 1, etc.
 #' @param numSNPs number of SNPs per haplotype.
 #' @param maxMissingGenos maximum number of single-locus genotypes with missing data to allow for each subject. (Subjects with more missing data, or with missing non-SNP data are removed.) The default is 1.
@@ -80,7 +77,7 @@
 #' (see below), are allowed, but subjects with missing data in more than maxMissingGenos,
 #' or with missing non-SNP data, are removed.
 #' @references
-#' Yuan X and Biswas S. Bivariate Logistic Bayesian LASSO for Detecting Rare Haplotype Association with Two Correlated Phenotypes. Under review.
+#' Yuan X and Biswas S (2019). Bivariate Logistic Bayesian LASSO for Detecting Rare Haplotype Association with Two Correlated Phenotypes. Genetic Epidemiology, in press.
 #'
 #' Zhang Y, Hofmann J, Purdue M, Lin S, and Biswas S.
 #' Logistic Bayesian LASSO for Genetic Association Analysis of Data from Complex Sampling Designs. Journal of Human Genetics, 62:819-829.
@@ -114,17 +111,17 @@
 #' # use smaller numbers for a quick check to make sure the package is loaded properly. With
 #' # such shorts runs, the results may not be meaningful.
 #' ## Analyzing LBL.ex1 under G-E independence assumption.
-#' out.LBL<-LBL(LBL.ex1, numSNPs=5, burn.in=100, num.it=1000)
+#' out.LBL<-LBL(LBL.ex1, numSNPs=5, burn.in=0, num.it=5)
 #'
 #' ## Analyzing LBL.ex1 under uncertainty of G-E independence assumption.
-#' out.LBL<-LBL(LBL.ex1, numSNPs=5, interaction.model="u", burn.in=100, num.it=1000)
+#' out.LBL<-LBL(LBL.ex1, numSNPs=5, interaction.model="u", burn.in=0, num.it=5)
 #'
 #' ## Analyzing LBL.ex2 which comes from complex sampling design with frequency matching.
 #' out.LBL<-LBL(LBL.ex2, numSNPs=5, complex.sampling=TRUE, n.stra=1, names.dep="stra",
-#' burn.in=100, num.it=1000)
+#' burn.in=0, num.it=5)
 #'
 #' ## Analyzing LBL.ex3 using the bivariate LBL method.
-#' out.LBL<-LBL(LBL.ex3, numSNPs=5, twoBinaryPheno=TRUE, burn.in=100, num.it=1000)
+#' out.LBL<-LBL(LBL.ex3, numSNPs=5, twoBinaryPheno=TRUE, burn.in=0, num.it=5)
 
 LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline = "missing", cov.baseline = "missing", complex.sampling = FALSE, n.stra = NULL, interaction.stra = TRUE, interaction.env = TRUE, interaction.model = "i", names.dep = "missing", a = 20, b = 20, start.beta = 0.01, gamma = 0.01, lambda = 1, D = 0, e = 0.1, seed = NULL, burn.in = NULL, num.it = NULL, twoBinaryPheno=FALSE, start.u=0.01,sigma_sq_u=1, start.f00=NULL, start.f10=NULL, start.f01=NULL, e_allHap=0.4, print.freq.ci=FALSE, print.lambda.ci=FALSE, print.D.ci=FALSE, print.sigma_sq_u.ci=FALSE)
 {
@@ -133,7 +130,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
   ####################################################################################################
   # Bivariate LBL
   ####################################################################################################
-  if (twoBinaryPheno == T){
+  if (twoBinaryPheno == TRUE){
     n.Y <- dim(haplos.list$nonHaploDM)[2] # num of phenotypes
     temp=cbind(haplos.list$ID, haplos.list$wt, haplos.list$nonHaploDM, haplos.list$haploDM)
     temp=temp[order(temp[,1]),]
@@ -210,7 +207,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         }
         if(haplo.mat[i,j]==1)
         {
-          if(is.na(haplo.map[i,1])==T) haplo.map[i,1]=j
+          if(is.na(haplo.map[i,1])==TRUE) haplo.map[i,1]=j
           else
           {
             haplo.map[i,2]=j
@@ -218,12 +215,12 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
         }
       }
-      if(is.na(haplo.map[i,1])==T)
+      if(is.na(haplo.map[i,1])==TRUE)
       {
         haplo.map[i,1]=dim(haplo.mat)[2]+1
         haplo.map[i,2]=dim(haplo.mat)[2]+1
       }
-      if(is.na(haplo.map[i,2])==T) haplo.map[i,2]=dim(haplo.mat)[2]+1
+      if(is.na(haplo.map[i,2])==TRUE) haplo.map[i,2]=dim(haplo.mat)[2]+1
     }
     uniq.mat<-unique(haplo.mat)
     uniq.map<-unique(haplo.map)
@@ -328,25 +325,25 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
     names(post.mean.freq01)<-c(hap.name, haplo.baseline)
 
     # CI for lambda (optional)
-    if (print.lambda.ci==T){
+    if (print.lambda.ci==TRUE){
       ci.lambda<-numeric(2)
       ci.lambda<-c(quantile(out$lambda.out, probs=0.025),quantile(out$lambda.out, probs=0.975))
     } else ci.lambda <- ""
 
     # CI for D (optional)
-    if (print.D.ci==T){
+    if (print.D.ci==TRUE){
       ci.D<-numeric(2)
       ci.D<-c(quantile(out$D.out, probs=0.025),quantile(out$D.out, probs=0.975))
     } else ci.D <- ""
 
     # CI for sigma_sq_u (optional)
-    if (print.sigma_sq_u.ci==T){
+    if (print.sigma_sq_u.ci==TRUE){
       ci.sigma_sq_u <- numeric(2)
       ci.sigma_sq_u<-c(quantile(out$sigma_sq_u.out, probs=0.025),quantile(out$sigma_sq_u.out, probs=0.975))
     } else ci.sigma_sq_u <- ""
 
     # CI for frequencies (optional)
-    if (print.freq.ci==T){
+    if (print.freq.ci==TRUE){
       ci.freq00<-numeric((x.length+1)*2)
       ci.freq10<-numeric((x.length+1)*2)
       ci.freq01<-numeric((x.length+1)*2)
@@ -388,7 +385,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
   ####################################################################################################
   #Non-complex sampling methods
   ####################################################################################################
-  if((twoBinaryPheno == F) & (complex.sampling==FALSE))
+  if((twoBinaryPheno == FALSE) & (complex.sampling==FALSE))
   {
     var.baseline = cov.baseline
     interaction.cov = interaction.env
@@ -566,11 +563,11 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       num.haplo.id=as.vector(table(haplos.list$ID))
 
       h.length=ncol(haplo.mat)+1
-      if(interaction.cov==T){
-        if (is.matrix(cov.mat)==T){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
+      if(interaction.cov==TRUE){
+        if (is.matrix(cov.mat)==TRUE){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
         }else{x.length=ncol(haplo.mat)+1+ncol(haplo.mat)}
       }else{
-        if (is.matrix(cov.mat)==T){x.length=ncol(haplo.mat)+ncol(cov.mat)
+        if (is.matrix(cov.mat)==TRUE){x.length=ncol(haplo.mat)+ncol(cov.mat)
         }else{x.length=ncol(haplo.mat)+1}
       }
 
@@ -587,7 +584,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(haplo.mat[i,j]==1)
           {
-            if(is.na(haplo.map[i,1])==T) haplo.map[i,1]=j
+            if(is.na(haplo.map[i,1])==TRUE) haplo.map[i,1]=j
             else
             {
               haplo.map[i,2]=j
@@ -595,12 +592,12 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(haplo.map[i,1])==T)
+        if(is.na(haplo.map[i,1])==TRUE)
         {
           haplo.map[i,1]=dim(haplo.mat)[2]+1
           haplo.map[i,2]=dim(haplo.mat)[2]+1
         }
-        if(is.na(haplo.map[i,2])==T) haplo.map[i,2]=dim(haplo.mat)[2]+1
+        if(is.na(haplo.map[i,2])==TRUE) haplo.map[i,2]=dim(haplo.mat)[2]+1
       }
 
       uniq.mat<-unique(haplo.mat)
@@ -617,7 +614,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(uniq.mat[i,j]==1)
           {
-            if(is.na(uniq.map[i,1])==T) uniq.map[i,1]=j
+            if(is.na(uniq.map[i,1])==TRUE) uniq.map[i,1]=j
             else
             {
               uniq.map[i,2]=j
@@ -625,22 +622,22 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(uniq.map[i,1])==T)
+        if(is.na(uniq.map[i,1])==TRUE)
         {
           uniq.map[i,1]=dim(uniq.mat)[2]+1
           uniq.map[i,2]=dim(uniq.mat)[2]+1
         }
-        if(is.na(uniq.map[i,2])==T) uniq.map[i,2]=dim(uniq.mat)[2]+1
+        if(is.na(uniq.map[i,2])==TRUE) uniq.map[i,2]=dim(uniq.mat)[2]+1
       }
 
-      if (is.matrix(cov.mat)==T){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))#concatenate each row of cov.mat
+      if (is.matrix(cov.mat)==TRUE){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))#concatenate each row of cov.mat
       }else{cov.vec=cov.mat}
       cov.vec.new=unique(cbind(haplos.list$ID, cov.vec))[,-1]
       y.new=unique(cbind(haplos.list$ID, y))[,-1]
       num.E=as.vector(table(cov.vec.new))#distribution of E's
 
       value.E=unique(cov.mat)#the dimention of value.E is len.E X len.dummy
-      if (is.matrix(value.E)==T){
+      if (is.matrix(value.E)==TRUE){
         value.E=value.E[order(unique(cov.vec)),]#reorder value.E to be consistant with num.E
         len.E=nrow(value.E)#num of different E's
         len.dummy=ncol(value.E)#num of dummy variables
@@ -650,7 +647,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         len.dummy=1#num of dummy variables
       }
 
-      if (is.matrix(value.E)==T){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))#concatenate each row of value.E
+      if (is.matrix(value.E)==TRUE){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))#concatenate each row of value.E
       }else{value.E.vec=value.E}
       index.E=match(cov.vec.new, value.E.vec)
 
@@ -660,7 +657,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       freq.out<-numeric((num.it-burn.in)*(h.length))
       D.out<-numeric(num.it-burn.in)
 
-      if(interaction.cov==F)no.interaction=1
+      if(interaction.cov==FALSE)no.interaction=1
       else no.interaction=0
 
       out<-.C("mcmc_indep", as.integer(y.new), as.integer(N), as.integer(n), as.integer(num.haplo.id), as.integer(x.length), as.integer(h.length), as.integer(haplo.map), as.integer(dim(uniq.mat)[1]), as.integer(t(uniq.map)), as.integer(index.E), as.integer(t(value.E)), as.integer(num.E), as.integer(len.E), as.integer(len.dummy), as.double(beta), as.double(lambda), as.double(freq.new), as.double(D), as.double(a), as.double(b), beta.out=as.double(beta.out), lambda.out=as.double(lambda.out), freq.out=as.double(freq.out), D.out=as.double(D.out), as.integer(num.it), as.integer(burn.in), as.integer(no.interaction))
@@ -725,7 +722,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       ci.lambda<-round(ci.lambda,4)
       ci.D<-round(ci.D,4)
 
-      if(interaction.cov==T){
+      if(interaction.cov==TRUE){
         for(i in 1:len.dummy)
         {
           name.paste.temp<-paste(cov.names[i],haplo.names,sep=".")
@@ -808,7 +805,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       num.haplo.id=as.vector(table(haplos.list$ID))
 
       h.length=ncol(haplo.mat)+1
-      if (is.matrix(cov.mat)==T){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
+      if (is.matrix(cov.mat)==TRUE){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
       }else{x.length=ncol(haplo.mat)+1+ncol(haplo.mat)}
 
       haplo.map<-matrix(rep(NA,2*(dim(haplo.mat)[1])),ncol=2)
@@ -824,7 +821,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(haplo.mat[i,j]==1)
           {
-            if(is.na(haplo.map[i,1])==T) haplo.map[i,1]=j
+            if(is.na(haplo.map[i,1])==TRUE) haplo.map[i,1]=j
             else
             {
               haplo.map[i,2]=j
@@ -832,12 +829,12 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(haplo.map[i,1])==T)
+        if(is.na(haplo.map[i,1])==TRUE)
         {
           haplo.map[i,1]=dim(haplo.mat)[2]+1
           haplo.map[i,2]=dim(haplo.mat)[2]+1
         }
-        if(is.na(haplo.map[i,2])==T) haplo.map[i,2]=dim(haplo.mat)[2]+1
+        if(is.na(haplo.map[i,2])==TRUE) haplo.map[i,2]=dim(haplo.mat)[2]+1
       }
 
       uniq.mat<-unique(haplo.mat)
@@ -854,7 +851,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(uniq.mat[i,j]==1)
           {
-            if(is.na(uniq.map[i,1])==T) uniq.map[i,1]=j
+            if(is.na(uniq.map[i,1])==TRUE) uniq.map[i,1]=j
             else
             {
               uniq.map[i,2]=j
@@ -862,22 +859,22 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(uniq.map[i,1])==T)
+        if(is.na(uniq.map[i,1])==TRUE)
         {
           uniq.map[i,1]=dim(uniq.mat)[2]+1
           uniq.map[i,2]=dim(uniq.mat)[2]+1
         }
-        if(is.na(uniq.map[i,2])==T) uniq.map[i,2]=dim(uniq.mat)[2]+1
+        if(is.na(uniq.map[i,2])==TRUE) uniq.map[i,2]=dim(uniq.mat)[2]+1
       }
 
-      if (is.matrix(cov.mat)==T){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(cov.mat)==TRUE){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))
       }else{cov.vec=cov.mat}
       cov.vec.new=unique(cbind(haplos.list$ID, cov.vec))[,-1]
       y.new=unique(cbind(haplos.list$ID, y))[,-1]
       num.E=as.vector(table(cov.vec.new))
 
       value.E=unique(cov.mat)
-      if (is.matrix(value.E)==T){
+      if (is.matrix(value.E)==TRUE){
         value.E=value.E[order(unique(cov.vec)),]
         len.E=nrow(value.E)
         len.dummy=ncol(value.E)
@@ -887,7 +884,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         len.dummy=1
       }
 
-      if (is.matrix(value.E)==T){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(value.E)==TRUE){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
       }else{value.E.vec=value.E}
       index.E=match(cov.vec.new, value.E.vec)
 
@@ -907,13 +904,13 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         l=l+step
       }
 
-      if (is.matrix(value.E)==T){value.dep=value.E[,which.dummy.dep]
+      if (is.matrix(value.E)==TRUE){value.dep=value.E[,which.dummy.dep]
       }else{value.dep=value.E}
-      if (is.matrix(value.dep)==T){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(value.dep)==TRUE){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
       }else{value.dep.vec=value.dep}
       o=order(value.dep.vec)
       t=table(value.dep.vec)
-      if (is.matrix(value.dep)==T){value.dep=unique(value.dep[o,])
+      if (is.matrix(value.dep)==TRUE){value.dep=unique(value.dep[o,])
       }else{value.dep=unique(value.dep[o])}
       len.dep=length(t)
       index.Etodep=rep(0, len.E)
@@ -924,9 +921,9 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         l=l+t[i]
       }
 
-      if (is.matrix(cov.mat)==T){dep.mat=cov.mat[,which.dummy.dep]
+      if (is.matrix(cov.mat)==TRUE){dep.mat=cov.mat[,which.dummy.dep]
       }else{dep.mat=cov.mat}
-      if (is.matrix(dep.mat)==T){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(dep.mat)==TRUE){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
       }else{dep.vec=dep.mat}
 
       j=1
@@ -1125,7 +1122,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       num.haplo.id=as.vector(table(haplos.list$ID))
 
       h.length=ncol(haplo.mat)+1
-      if (is.matrix(cov.mat)==T){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
+      if (is.matrix(cov.mat)==TRUE){x.length=ncol(haplo.mat)+ncol(cov.mat)+ncol(haplo.mat)*ncol(cov.mat)
       }else{x.length=ncol(haplo.mat)+1+ncol(haplo.mat)}
 
       haplo.map<-matrix(rep(NA,2*(dim(haplo.mat)[1])),ncol=2)
@@ -1141,7 +1138,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(haplo.mat[i,j]==1)
           {
-            if(is.na(haplo.map[i,1])==T) haplo.map[i,1]=j
+            if(is.na(haplo.map[i,1])==TRUE) haplo.map[i,1]=j
             else
             {
               haplo.map[i,2]=j
@@ -1149,12 +1146,12 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(haplo.map[i,1])==T)
+        if(is.na(haplo.map[i,1])==TRUE)
         {
           haplo.map[i,1]=dim(haplo.mat)[2]+1
           haplo.map[i,2]=dim(haplo.mat)[2]+1
         }
-        if(is.na(haplo.map[i,2])==T) haplo.map[i,2]=dim(haplo.mat)[2]+1
+        if(is.na(haplo.map[i,2])==TRUE) haplo.map[i,2]=dim(haplo.mat)[2]+1
       }
 
       uniq.mat<-unique(haplo.mat)
@@ -1171,7 +1168,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
           if(uniq.mat[i,j]==1)
           {
-            if(is.na(uniq.map[i,1])==T) uniq.map[i,1]=j
+            if(is.na(uniq.map[i,1])==TRUE) uniq.map[i,1]=j
             else
             {
               uniq.map[i,2]=j
@@ -1179,22 +1176,22 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
             }
           }
         }
-        if(is.na(uniq.map[i,1])==T)
+        if(is.na(uniq.map[i,1])==TRUE)
         {
           uniq.map[i,1]=dim(uniq.mat)[2]+1
           uniq.map[i,2]=dim(uniq.mat)[2]+1
         }
-        if(is.na(uniq.map[i,2])==T) uniq.map[i,2]=dim(uniq.mat)[2]+1
+        if(is.na(uniq.map[i,2])==TRUE) uniq.map[i,2]=dim(uniq.mat)[2]+1
       }
 
-      if (is.matrix(cov.mat)==T){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(cov.mat)==TRUE){cov.vec=apply(cov.mat, 1, function(x) paste(x, collapse=""))
       }else{cov.vec=cov.mat}
       cov.vec.new=unique(cbind(haplos.list$ID, cov.vec))[,-1]
       y.new=unique(cbind(haplos.list$ID, y))[,-1]
       num.E=as.vector(table(cov.vec.new))
 
       value.E=unique(cov.mat)
-      if (is.matrix(value.E)==T){
+      if (is.matrix(value.E)==TRUE){
         value.E=value.E[order(unique(cov.vec)),]
         len.E=nrow(value.E)
         len.dummy=ncol(value.E)
@@ -1204,7 +1201,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         len.dummy=1
       }
 
-      if (is.matrix(value.E)==T){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(value.E)==TRUE){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
       }else{value.E.vec=value.E}
       index.E=match(cov.vec.new, value.E.vec)
 
@@ -1224,13 +1221,13 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         l=l+step
       }
 
-      if (is.matrix(value.E)==T){value.dep=value.E[,which.dummy.dep]
+      if (is.matrix(value.E)==TRUE){value.dep=value.E[,which.dummy.dep]
       }else{value.dep=value.E}
-      if (is.matrix(value.dep)==T){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(value.dep)==TRUE){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
       }else{value.dep.vec=value.dep}
       o=order(value.dep.vec)
       t=table(value.dep.vec)
-      if (is.matrix(value.dep)==T){value.dep=unique(value.dep[o,])
+      if (is.matrix(value.dep)==TRUE){value.dep=unique(value.dep[o,])
       }else{value.dep=unique(value.dep[o])}
       len.dep=length(t)
       index.Etodep=rep(0, len.E)
@@ -1241,9 +1238,9 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         l=l+t[i]
       }
 
-      if (is.matrix(cov.mat)==T){dep.mat=cov.mat[,which.dummy.dep]
+      if (is.matrix(cov.mat)==TRUE){dep.mat=cov.mat[,which.dummy.dep]
       }else{dep.mat=cov.mat}
-      if (is.matrix(dep.mat)==T){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
+      if (is.matrix(dep.mat)==TRUE){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
       }else{dep.vec=dep.mat}
 
       j=1
@@ -1434,7 +1431,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
   ####################################################################################################
   #Complex sampling methods
   ####################################################################################################
-  if((twoBinaryPheno == F) & (complex.sampling==TRUE))
+  if((twoBinaryPheno == FALSE) & (complex.sampling==TRUE))
   {
     var.baseline = cov.baseline
     interaction.cov = interaction.env
@@ -1499,16 +1496,16 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
     h.length=ncol(haplo.mat)+1
     len.dummy.stra=sum(num.dummies.each.var[1:n.stra])
     len.dummy.cov=sum(num.dummies.each.var[-c(1:n.stra)])
-    if (is.matrix(var.mat)==T){
-      if (interaction.stra==T & interaction.cov==T){
+    if (is.matrix(var.mat)==TRUE){
+      if (interaction.stra==TRUE & interaction.cov==TRUE){
         x.length=ncol(haplo.mat)+ncol(var.mat)+ncol(haplo.mat)*ncol(var.mat)
-      } else if (interaction.stra==T & interaction.cov==F){
+      } else if (interaction.stra==TRUE & interaction.cov==FALSE){
         x.length=ncol(haplo.mat)+ncol(var.mat)+ncol(haplo.mat)*len.dummy.stra
-      } else if (interaction.stra==F & interaction.cov==T){
+      } else if (interaction.stra==FALSE & interaction.cov==TRUE){
         x.length=ncol(haplo.mat)+ncol(var.mat)+ncol(haplo.mat)*len.dummy.cov
       } else {x.length=ncol(haplo.mat)+ncol(var.mat)}
     }else{
-      if (interaction.stra==T){
+      if (interaction.stra==TRUE){
         x.length=ncol(haplo.mat)+1+ncol(haplo.mat)
       } else {
         x.length=ncol(haplo.mat)+1}}
@@ -1526,7 +1523,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         }
         if(haplo.mat[i,j]==1)
         {
-          if(is.na(haplo.map[i,1])==T) haplo.map[i,1]=j
+          if(is.na(haplo.map[i,1])==TRUE) haplo.map[i,1]=j
           else
           {
             haplo.map[i,2]=j
@@ -1534,12 +1531,12 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
         }
       }
-      if(is.na(haplo.map[i,1])==T)
+      if(is.na(haplo.map[i,1])==TRUE)
       {
         haplo.map[i,1]=dim(haplo.mat)[2]+1
         haplo.map[i,2]=dim(haplo.mat)[2]+1
       }
-      if(is.na(haplo.map[i,2])==T) haplo.map[i,2]=dim(haplo.mat)[2]+1
+      if(is.na(haplo.map[i,2])==TRUE) haplo.map[i,2]=dim(haplo.mat)[2]+1
     }
 
     uniq.mat<-unique(haplo.mat)
@@ -1556,7 +1553,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         }
         if(uniq.mat[i,j]==1)
         {
-          if(is.na(uniq.map[i,1])==T) uniq.map[i,1]=j
+          if(is.na(uniq.map[i,1])==TRUE) uniq.map[i,1]=j
           else
           {
             uniq.map[i,2]=j
@@ -1564,15 +1561,15 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
           }
         }
       }
-      if(is.na(uniq.map[i,1])==T)
+      if(is.na(uniq.map[i,1])==TRUE)
       {
         uniq.map[i,1]=dim(uniq.mat)[2]+1
         uniq.map[i,2]=dim(uniq.mat)[2]+1
       }
-      if(is.na(uniq.map[i,2])==T) uniq.map[i,2]=dim(uniq.mat)[2]+1
+      if(is.na(uniq.map[i,2])==TRUE) uniq.map[i,2]=dim(uniq.mat)[2]+1
     }
 
-    if (is.matrix(var.mat)==T){var.vec=apply(var.mat, 1, function(x) paste(x, collapse=""))
+    if (is.matrix(var.mat)==TRUE){var.vec=apply(var.mat, 1, function(x) paste(x, collapse=""))
     }else{var.vec=var.mat}
     var.vec.new=unique(cbind(haplos.list$ID, var.vec))[,-1]
     y.new=unique(cbind(haplos.list$ID, y))[,-1]
@@ -1588,7 +1585,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
     }
 
     value.E=unique(var.mat)
-    if (is.matrix(value.E)==T){
+    if (is.matrix(value.E)==TRUE){
       value.E=value.E[order(unique(var.vec)),]
       len.E=nrow(value.E)
       len.dummy=ncol(value.E)
@@ -1598,7 +1595,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       len.dummy=1
     }
 
-    if (is.matrix(value.E)==T){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
+    if (is.matrix(value.E)==TRUE){value.E.vec=apply(value.E, 1, function(x) paste(x, collapse=""))
     }else{value.E.vec=value.E}
     index.E=match(var.vec.new, value.E.vec)
 
@@ -1618,13 +1615,13 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       l=l+step
     }
 
-    if (is.matrix(value.E)==T){value.dep=value.E[,which.dummy.dep]
+    if (is.matrix(value.E)==TRUE){value.dep=value.E[,which.dummy.dep]
     }else{value.dep=value.E}
-    if (is.matrix(value.dep)==T){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
+    if (is.matrix(value.dep)==TRUE){value.dep.vec=apply(value.dep, 1, function(x) paste(x, collapse=""))
     }else{value.dep.vec=value.dep}
     o=order(value.dep.vec)
     t=table(value.dep.vec)
-    if (is.matrix(value.dep)==T){value.dep=unique(value.dep[o,])
+    if (is.matrix(value.dep)==TRUE){value.dep=unique(value.dep[o,])
     }else{value.dep=unique(value.dep[o])}
     len.dep=length(t)
     index.Etodep=rep(0, len.E)
@@ -1635,9 +1632,9 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
       l=l+t[i]
     }
 
-    if (is.matrix(var.mat)==T){dep.mat=var.mat[,which.dummy.dep]
+    if (is.matrix(var.mat)==TRUE){dep.mat=var.mat[,which.dummy.dep]
     }else{dep.mat=var.mat}
-    if (is.matrix(dep.mat)==T){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
+    if (is.matrix(dep.mat)==TRUE){dep.vec=apply(dep.mat, 1, function(x) paste(x, collapse=""))
     }else{dep.vec=dep.mat}
 
     j=1
@@ -1752,7 +1749,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
     ci.lambda<-round(ci.lambda,4)
     ci.D<-round(ci.D,4)
 
-    if (interaction.stra==T & interaction.cov==T){
+    if (interaction.stra==TRUE & interaction.cov==TRUE){
       for(i in 1:len.dummy)
       {
         name.paste.temp<-paste(var.names[i],haplo.names,sep=" x ")
@@ -1760,7 +1757,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         }else{name.paste=c(name.paste,name.paste.temp)}
       }
       pname<-c("beta0",haplo.names,name.paste,var.names)
-    } else if (interaction.stra==T & interaction.cov==F){
+    } else if (interaction.stra==TRUE & interaction.cov==FALSE){
       for(i in 1:len.dummy.stra)
       {
         name.paste.temp<-paste(var.names[i],haplo.names,sep=" x ")
@@ -1768,7 +1765,7 @@ LBL<-function(dat, numSNPs, maxMissingGenos = 1, allelic = TRUE, haplo.baseline 
         }else{name.paste=c(name.paste,name.paste.temp)}
       }
       pname<-c("beta0",haplo.names,name.paste,var.names)
-    } else if (interaction.stra==F & interaction.cov==T){
+    } else if (interaction.stra==FALSE & interaction.cov==TRUE){
       for(i in 1:len.dummy.cov)
       {
         name.paste.temp<-paste(var.names[i+len.dummy.stra],haplo.names,sep=" x ")

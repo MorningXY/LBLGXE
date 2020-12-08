@@ -46,10 +46,6 @@ void mcmc_twoBinaryPheno(int *haplotype_map, int *tot_hap, int *y1, int *y2, int
 	double exp_Xbeta1_map[*x_length + 1][*x_length + 1], exp_Xbeta2_map[*x_length + 1][*x_length + 1], a1_map[*x_length + 1][*x_length + 1], a2_map[*x_length + 1][*x_length + 1], exp_u[*N];
   double **theta_over_deno_map;
 
-	/*y1_new y2_new*/
-	//y1_new = (int *)calloc(*N, sizeof(int));
-	//y2_new = (int *)calloc(*N, sizeof(int));
-
 	/* separating haplotype map vector from R as h_mat matrix */
 	l = 0;
 	for (j = 0; j<2; ++j)
@@ -337,7 +333,6 @@ void update_beta1_bi(int ***haplo_map, int **uniq_map, double *beta1, double *be
 		}
 
 		/*Y1=0 & Y2=1, i from N2+1 to N3(N3=n_00+n_10+n_01)*/
-
 		if ((y1_new[i] == 0) && (y2_new[i] == 1))
 		{
 			inprod = 0;

@@ -3,9 +3,7 @@
 \alias{LBLGXE}
 \docType{package}
 \title{
-Bayesian Lasso for detecting Rare (or Common) Haplotype
-        Association and their interactions with Environmental
-        Covariates with one single phenotype or two correlated binary phenotypes
+Logistic Bayesian Lasso for Rare (or Common) Haplotype Association
 }
 \description{
 The main function of this package is LBL. For details, see ?LBL.

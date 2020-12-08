@@ -1,15 +1,19 @@
 Package: LBLGXE
 Type: Package
-Title: Logistic Bayesian Lasso for Detecting Rare (or Common) Haplotype
-        Association and their Interactions with Environmental
-        Covariates with One Single Phenotype or Two Correlated Binary Phenotypes 
-        (without Environmental Covariate)
-Version: 1.4
+Title: Logistic Bayesian Lasso for Rare (or Common) Haplotype Association
+Version: 1.5
 Author: Xiaochen Yuan, Yuan Zhang, Shuang Xia, Swati Biswas, and Shili Lin
 Maintainer: Xiaochen Yuan <xxy142030@utdallas.edu>
-Description: This function takes a dataset of haplotypes and environmental covariates with one binary phenotype in which rows for individuals of uncertain phase have been augmented by "pseudo-individuals" who carry the possible multilocus genotypes consistent with the single-locus phenotypes. Bayesian lasso is used to find the posterior distributions of logistic regression coefficients, which are then used to calculate Bayes Factor and credible set to test for association with haplotypes, environmental covariates and interactions. The model can handle complex sampling data, in particular, frequency matched cases and controls with controls obtained using stratified sampling. This version can also be applied to a dataset with no environmental covariate and two correlated binary phenotypes.
-Depends: R (>= 2.10), hapassoc, dummies
+Description: This function takes a dataset of genotypes, at least one binary phenotype, and optionally environmental covariates. Bayesian lasso is used to find the posterior distributions of logistic regression coefficients, which are then used to calculate Bayes Factor and credible set to test for association with haplotypes, environmental covariates and interactions. The model can handle complex sampling data, in particular, frequency matched cases and controls with controls obtained using stratified sampling. This version can also be applied to a dataset with no environmental covariate and two correlated phenotypes (both can be binary or one is binary and the other one is continuous).
+    Yuan X, Biswas S (2019) <doi:10.1002/gepi.22258>.
+    Zhang Y, Hofmann J, Purdue M, Lin S, and Biswas S (2017) <doi:10.1038/jhg.2017.43>.
+    Zhang Y, Lin S, and Biswas S (2017) <doi:10.1111/biom.12567>.
+    Zhang Y and Biswas S (2015) <doi:10.4137/CIN.S17290>.
+    Biswas S, Xia S and Lin S (2014) <doi:10.1002/gepi.21773>.
+    Biswas S, Lin S (2012) <doi:10.1111/j.1541-0420.2011.01680.x>.
+    Burkett K, Graham J and McNeney B (2006) <doi:10.18637/jss.v016.i02>.
+Depends: R (>= 3.5), hapassoc
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1

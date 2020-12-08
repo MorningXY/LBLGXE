@@ -1,746 +1,1622 @@
 [
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+        "file_last_write": 1562432507.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 32,
-                "name" : "mcmc_without_cov(int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, int *, int *, double *, int *, int *, double *, double *, double *, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc_without_cov"
+                "usr": "c:@F@mcmc_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_without_cov(int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, int *, int *, double *, int *, int *, double *, double *, double *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 32,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 160,
-                "name" : "update_z_without_cov(double *, double *, double, int, int *, int **, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_z_without_cov"
+                "usr": "c:@F@update_z_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_z_without_cov(double *, double *, double, int, int *, int **, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 160,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 213,
-                "name" : "update_beta_without_cov(int **, double *, int, double, double *, double, int, int *, int, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta_without_cov"
+                "usr": "c:@F@update_beta_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_without_cov(int **, double *, int, double, double *, double, int, int *, int, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 213,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 256,
-                "name" : "update_lambda_without_cov(double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda_without_cov"
+                "usr": "c:@F@update_lambda_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_without_cov(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 256,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 270,
-                "name" : "update_freq_without_cov(double *, double *, double, int, int, int, int, int **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq_without_cov"
+                "usr": "c:@F@update_freq_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_without_cov(double *, double *, double, int, int, int, int, int **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 270,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 340,
-                "name" : "update_D_without_cov(double *, double *, double, int, int, int, int, int **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D_without_cov"
+                "usr": "c:@F@update_D_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_without_cov(double *, double *, double, int, int, int, int, int **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 340,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 390,
-                "name" : "calc_den_post_without_cov(double *, double *, int, double, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post_without_cov"
+                "usr": "c:@F@calc_den_post_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_without_cov(double *, double *, int, double, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 390,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 410,
-                "name" : "calc_a_without_cov(double *, int *, int, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a_without_cov"
+                "usr": "c:@F@calc_a_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_without_cov(double *, int *, int, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 410,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 458,
-                "name" : "sum_without_cov(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum_without_cov"
+                "usr": "c:@F@sum_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_without_cov(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 458,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 472,
-                "name" : "find_min_without_cov(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min_without_cov"
+                "usr": "c:@F@find_min_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_without_cov(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 472,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 486,
-                "name" : "gen_double_exp_without_cov(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp_without_cov"
+                "usr": "c:@F@gen_double_exp_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_without_cov(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 486,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-                "kind" : 6,
-                "line" : 503,
-                "name" : "dirichlet_without_cov(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet_without_cov"
+                "usr": "c:@F@dirichlet_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_without_cov(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
+                "line": 503,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL.c",
-        "file_last_write" : 1562432507
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLGXE_init.c",
+        "file_last_write": 1562433649.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLGXE_init.c",
-                "kind" : 6,
-                "line" : 26,
-                "name" : "R_init_LBLGXE(DllInfo *)",
-                "parent_name" : "",
-                "usr" : "c:@F@R_init_LBLGXE"
+                "usr": "c:@F@R_init_LBLGXE",
+                "kind": 6,
+                "parent_name": "",
+                "name": "R_init_LBLGXE(DllInfo *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLGXE_init.c",
+                "line": 26,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLGXE_init.c",
-        "file_last_write" : 1562433649
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+        "file_last_write": 1562432597.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 44,
-                "name" : "mcmc(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc"
+                "usr": "c:@F@mcmc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 44,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 300,
-                "name" : "update_beta1(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta1"
+                "usr": "c:@F@update_beta1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta1(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 300,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 374,
-                "name" : "update_lambda(double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda"
+                "usr": "c:@F@update_lambda",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 374,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 388,
-                "name" : "update_freq(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq"
+                "usr": "c:@F@update_freq",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 388,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 477,
-                "name" : "update_D1(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D1"
+                "usr": "c:@F@update_D1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D1(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 477,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 558,
-                "name" : "RJ12(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@RJ12"
+                "usr": "c:@F@RJ12",
+                "kind": 6,
+                "parent_name": "",
+                "name": "RJ12(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 558,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 667,
-                "name" : "update_beta2(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta2"
+                "usr": "c:@F@update_beta2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta2(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 667,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 741,
-                "name" : "update_b_par(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_b_par"
+                "usr": "c:@F@update_b_par",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 741,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 857,
-                "name" : "update_D2(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D2"
+                "usr": "c:@F@update_D2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D2(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 857,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 939,
-                "name" : "RJ21(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@RJ21"
+                "usr": "c:@F@RJ21",
+                "kind": 6,
+                "parent_name": "",
+                "name": "RJ21(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 939,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1026,
-                "name" : "calc_den_post1(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post1"
+                "usr": "c:@F@calc_den_post1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post1(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1026,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1064,
-                "name" : "calc_den_post2(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post2"
+                "usr": "c:@F@calc_den_post2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post2(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1064,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1102,
-                "name" : "calc_a(double *, int *, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a"
+                "usr": "c:@F@calc_a",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1102,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1117,
-                "name" : "sum(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum"
+                "usr": "c:@F@sum",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1117,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1127,
-                "name" : "find_min(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min"
+                "usr": "c:@F@find_min",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1127,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1140,
-                "name" : "gen_double_exp(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp"
+                "usr": "c:@F@gen_double_exp",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1140,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-                "kind" : 6,
-                "line" : 1154,
-                "name" : "dirichlet(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet"
+                "usr": "c:@F@dirichlet",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
+                "line": 1154,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE.c",
-        "file_last_write" : 1562432597
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+        "file_last_write": 1562432631.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 28,
-                "name" : "mcmc_dep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc_dep"
+                "usr": "c:@F@mcmc_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_dep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 28,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 281,
-                "name" : "update_beta_dep(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta_dep"
+                "usr": "c:@F@update_beta_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_dep(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 281,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 359,
-                "name" : "update_lambda_dep(double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda_dep"
+                "usr": "c:@F@update_lambda_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_dep(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 359,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 373,
-                "name" : "update_b_par_dep(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_b_par_dep"
+                "usr": "c:@F@update_b_par_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par_dep(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 373,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 490,
-                "name" : "update_D_dep(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D_dep"
+                "usr": "c:@F@update_D_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_dep(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 490,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 573,
-                "name" : "calc_den_post_dep(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post_dep"
+                "usr": "c:@F@calc_den_post_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_dep(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 573,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 611,
-                "name" : "calc_a_dep(double *, int *, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a_dep"
+                "usr": "c:@F@calc_a_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_dep(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 611,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 626,
-                "name" : "sum_dep(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum_dep"
+                "usr": "c:@F@sum_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_dep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 626,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 636,
-                "name" : "find_min_dep(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min_dep"
+                "usr": "c:@F@find_min_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_dep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 636,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 649,
-                "name" : "gen_double_exp_dep(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp_dep"
+                "usr": "c:@F@gen_double_exp_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_dep(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 649,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-                "kind" : 6,
-                "line" : 663,
-                "name" : "dirichlet_dep(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet_dep"
+                "usr": "c:@F@dirichlet_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_dep(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
+                "line": 663,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_D.c",
-        "file_last_write" : 1562432631
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+        "file_last_write": 1562432434.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 29,
-                "name" : "mcmc_indep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc_indep"
+                "usr": "c:@F@mcmc_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_indep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 29,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 186,
-                "name" : "update_beta_indep(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta_indep"
+                "usr": "c:@F@update_beta_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_indep(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 186,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 260,
-                "name" : "update_lambda_indep(double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda_indep"
+                "usr": "c:@F@update_lambda_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_indep(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 260,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 274,
-                "name" : "update_freq_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq_indep"
+                "usr": "c:@F@update_freq_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 274,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 363,
-                "name" : "update_D_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D_indep"
+                "usr": "c:@F@update_D_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 363,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 447,
-                "name" : "calc_den_post_indep(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post_indep"
+                "usr": "c:@F@calc_den_post_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_indep(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 447,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 494,
-                "name" : "calc_a_indep(double *, int *, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a_indep"
+                "usr": "c:@F@calc_a_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_indep(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 494,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 509,
-                "name" : "sum_indep(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum_indep"
+                "usr": "c:@F@sum_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_indep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 509,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 519,
-                "name" : "find_min_indep(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min_indep"
+                "usr": "c:@F@find_min_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_indep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 519,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 532,
-                "name" : "gen_double_exp_indep(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp_indep"
+                "usr": "c:@F@gen_double_exp_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_indep(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 532,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-                "kind" : 6,
-                "line" : 546,
-                "name" : "dirichlet_indep(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet_indep"
+                "usr": "c:@F@dirichlet_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_indep(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
+                "line": 546,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_GXE_I.c",
-        "file_last_write" : 1562432434
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+        "file_last_write": 1567096434.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 26,
-                "name" : "mcmc_twoBinaryPheno(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *, double *, double *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc_twoBinaryPheno"
+                "usr": "c:@F@mcmc_twoBinaryPheno",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_twoBinaryPheno(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *, double *, double *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 26,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 232,
-                "name" : "update_beta1_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta1_bi"
+                "usr": "c:@F@update_beta1_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta1_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 228,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 429,
-                "name" : "update_beta2_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta2_bi"
+                "usr": "c:@F@update_beta2_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta2_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 424,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 612,
-                "name" : "update_lambda_bi(double *, double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda_bi"
+                "usr": "c:@F@update_lambda_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_bi(double *, double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 607,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 629,
-                "name" : "update_u(int, double *, double *, double, int ***, int **, double *, double *, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
-                "parent_name" : "",
-                "usr" : "c:@F@update_u"
+                "usr": "c:@F@update_u",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_u(int, double *, double *, double, int ***, int **, double *, double *, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 624,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 780,
-                "name" : "update_sigma_sq_u(double, double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_sigma_sq_u"
+                "usr": "c:@F@update_sigma_sq_u",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_sigma_sq_u(double, double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 775,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 794,
-                "name" : "update_D_bi(double *, double *, double, int, int, int *, int, int ***, int **, int *, int *, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D_bi"
+                "usr": "c:@F@update_D_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_bi(double *, double *, double, int, int, int *, int, int ***, int **, int *, int *, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 789,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 980,
-                "name" : "update_freq_00(double *, double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq_00"
+                "usr": "c:@F@update_freq_00",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_00(double *, double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 975,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1108,
-                "name" : "update_freq_10(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq_10"
+                "usr": "c:@F@update_freq_10",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_10(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1103,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1222,
-                "name" : "update_freq_01(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_freq_01"
+                "usr": "c:@F@update_freq_01",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_01(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1217,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1341,
-                "name" : "calc_a_bi(double *, int *, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a_bi"
+                "usr": "c:@F@calc_a_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_bi(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1336,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1358,
-                "name" : "sum_bi(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum_bi"
+                "usr": "c:@F@sum_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_bi(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1353,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1373,
-                "name" : "find_min_bi(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min_bi"
+                "usr": "c:@F@find_min_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_bi(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1368,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1388,
-                "name" : "gen_double_exp_bi(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp_bi"
+                "usr": "c:@F@gen_double_exp_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_bi(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1383,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-                "kind" : 6,
-                "line" : 1405,
-                "name" : "dirichlet_bi(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet_bi"
+                "usr": "c:@F@dirichlet_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_bi(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
+                "line": 1400,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBL_twoBinaryPheno.c",
-        "file_last_write" : 1562432888
+        ]
     },
     {
-        "definitions" : [
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+        "file_last_write": 1562433060.0,
+        "definitions": [
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 30,
-                "name" : "mcmc_complex(int *, double *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *, int *, int *)",
-                "parent_name" : "",
-                "usr" : "c:@F@mcmc_complex"
+                "usr": "c:@F@mcmc_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_complex(int *, double *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 30,
+                "column": 6
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 289,
-                "name" : "update_beta_complex(double *, int, double, double **, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_beta_complex"
+                "usr": "c:@F@update_beta_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_complex(double *, int, double, double **, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 289,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 367,
-                "name" : "update_lambda_complex(double *, double, double, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_lambda_complex"
+                "usr": "c:@F@update_lambda_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_complex(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 367,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 381,
-                "name" : "update_b_par_complex(double **, int, int, double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_b_par_complex"
+                "usr": "c:@F@update_b_par_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par_complex(double **, int, int, double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 381,
+                "column": 6
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 498,
-                "name" : "update_D_complex(double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@update_D_complex"
+                "usr": "c:@F@update_D_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_complex(double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 498,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 583,
-                "name" : "calc_den_post_complex(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_den_post_complex"
+                "usr": "c:@F@calc_den_post_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_complex(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 583,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 634,
-                "name" : "calc_a_complex(double *, int *, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@calc_a_complex"
+                "usr": "c:@F@calc_a_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_complex(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 634,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 649,
-                "name" : "sum_complex(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@sum_complex"
+                "usr": "c:@F@sum_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_complex(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 649,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 659,
-                "name" : "find_min_complex(double *, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@find_min_complex"
+                "usr": "c:@F@find_min_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_complex(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 659,
+                "column": 8
             },
             {
-                "column" : 8,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 672,
-                "name" : "gen_double_exp_complex(double, double)",
-                "parent_name" : "",
-                "usr" : "c:@F@gen_double_exp_complex"
+                "usr": "c:@F@gen_double_exp_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_complex(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 672,
+                "column": 8
             },
             {
-                "column" : 6,
-                "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-                "kind" : 6,
-                "line" : 686,
-                "name" : "dirichlet_complex(double *, int, double *)",
-                "parent_name" : "",
-                "usr" : "c:@F@dirichlet_complex"
+                "usr": "c:@F@dirichlet_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_complex(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
+                "line": 686,
+                "column": 6
             }
-        ],
-        "file" : "C:/Users/xcass/OneDrive/Documents/LBLGXE/src/LBLc.c",
-        "file_last_write" : 1562433060
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+        "file_last_write": 1606185948.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_without_cov(int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, int *, int *, double *, int *, int *, double *, double *, double *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 32,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_z_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_z_without_cov(double *, double *, double, int, int *, int **, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 160,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_without_cov(int **, double *, int, double, double *, double, int, int *, int, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 213,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_without_cov(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 256,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_freq_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_without_cov(double *, double *, double, int, int, int, int, int **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 270,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_without_cov(double *, double *, double, int, int, int, int, int **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 340,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_den_post_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_without_cov(double *, double *, int, double, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 388,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_a_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_without_cov(double *, int *, int, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 408,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_without_cov(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 456,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_without_cov(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 470,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_without_cov(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 484,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_without_cov",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_without_cov(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL.c",
+                "line": 501,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLGXE_init.c",
+        "file_last_write": 1606186527.0,
+        "definitions": [
+            {
+                "usr": "c:@F@R_init_LBLGXE",
+                "kind": 6,
+                "parent_name": "",
+                "name": "R_init_LBLGXE(DllInfo *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLGXE_init.c",
+                "line": 28,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+        "file_last_write": 1606185055.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_BiBC",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_BiBC(int *, int *, int *, double *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *, double *, double *, double *, double *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 25,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta_b_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_b_bibc(int ***, int **, double *, int, int, int, double, double *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 242,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_sigma_sq_c_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_sigma_sq_c_bibc(int ***, int, int, double, double, double, int *, double *, double *, double *, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double **, double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 342,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_beta_c_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_c_bibc(int ***, int **, double *, int, int, int, double, double *, double, int *, double *, double *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double **, double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 412,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_bibc(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 513,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_u_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_u_bibc(int, double *, double *, int *, double *, double, double, double, int ***, int **, int, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double **, double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 529,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_sigma_u_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_sigma_u_bibc(double, double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 602,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_D_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_bibc(double *, double, int, int, int *, int, int ***, int **, int *, double *, double (*)[x_length + 1], double (*)[x_length + 1], double **, double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 643,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_freq_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_bibc(double *, int *, double, int, int, int *, int, int ***, int **, double *, double (*)[x_length + 1], double (*)[x_length + 1], double **, double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 729,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@calc_a_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_bibc(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 833,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_bibc(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 852,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_without_cov_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_without_cov_bibc(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 866,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_without_cov_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_without_cov_bibc(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 881,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_without_cov_bibc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_without_cov_bibc(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_Bi_BC.c",
+                "line": 898,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+        "file_last_write": 1606186027.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 44,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta1(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 300,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 374,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_freq",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 388,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D1(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 477,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@RJ12",
+                "kind": 6,
+                "parent_name": "",
+                "name": "RJ12(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 557,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta2(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 666,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_b_par",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 740,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D2(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 856,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@RJ21",
+                "kind": 6,
+                "parent_name": "",
+                "name": "RJ21(double *, double *, double **, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 937,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@calc_den_post1",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post1(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1024,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_den_post2",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post2(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1062,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_a",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1100,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1115,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1125,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1138,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE.c",
+                "line": 1152,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+        "file_last_write": 1606186056.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_dep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 28,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_dep(double *, int, double, double **, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 281,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_dep(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 359,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_b_par_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par_dep(double **, int, int, double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 373,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_dep(double **, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 490,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_den_post_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_dep(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 572,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_a_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_dep(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 610,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_dep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 625,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_dep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 635,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_dep(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 648,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_dep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_dep(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_D.c",
+                "line": 662,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+        "file_last_write": 1606186086.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_indep(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 29,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_indep(double *, int, double, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 186,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_indep(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 260,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_freq_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 274,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_indep(double *, double *, double, int *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 363,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_den_post_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_indep(double *, double *, double, int, int, int, int **, int **, int *, int, int, double (*)[h_length], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 446,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_a_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_indep(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 493,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_indep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 508,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_indep(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 518,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_indep(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 531,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_indep",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_indep(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_GXE_I.c",
+                "line": 545,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+        "file_last_write": 1606185920.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_twoBinaryPheno",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_twoBinaryPheno(int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, double *, double *, double *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 26,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta1_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta1_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 228,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta2_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta2_bi(int ***, int **, double *, double *, int, int, double, double *, double, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 424,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_bi(double *, double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 607,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_u",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_u(int, double *, double *, double, int ***, int **, double *, double *, int, int *, int *, int, int *, double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1], double (*)[x_length + 1])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 624,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_sigma_sq_u",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_sigma_sq_u(double, double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 775,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_D_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_bi(double *, double *, double, int, int, int *, int, int ***, int **, int *, int *, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 789,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_freq_00",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_00(double *, double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 974,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_freq_10",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_10(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1102,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_freq_01",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_freq_01(double *, double *, double *, double *, double, int, int, int, int, int, int *, int, int ***, int **, double (*)[x_length + 1], double *, double (*)[x_length + 1], double (*)[x_length + 1], double **)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1216,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@calc_a_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_bi(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1335,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_bi(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1352,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_bi(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1367,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_bi(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1382,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_bi",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_bi(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBL_twoBinaryPheno.c",
+                "line": 1399,
+                "column": 6
+            }
+        ]
+    },
+    {
+        "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+        "file_last_write": 1606186116.0,
+        "definitions": [
+            {
+                "usr": "c:@F@mcmc_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "mcmc_complex(int *, double *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, double *, int *, int *, int *, int *, int *, int *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 30,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_beta_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_beta_complex(double *, int, double, double **, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 289,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_lambda_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_lambda_complex(double *, double, double, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 367,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@update_b_par_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_b_par_complex(double **, int, int, double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int **, int, int, int **, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 381,
+                "column": 6
+            },
+            {
+                "usr": "c:@F@update_D_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "update_D_complex(double **, double *, double, int *, double *, int, int *, int, int, int ***, int, int **, int *, int **, int *, int, int, int *, int, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 498,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_den_post_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_den_post_complex(double *, double **, double, int, int, int, int **, int **, int *, int, int, int *, double (*)[h_length][len_E], double (*)[h_length][len_E])",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 582,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@calc_a_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "calc_a_complex(double *, int *, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 633,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@sum_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "sum_complex(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 648,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@find_min_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "find_min_complex(double *, int)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 658,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@gen_double_exp_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gen_double_exp_complex(double, double)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 671,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@dirichlet_complex",
+                "kind": 6,
+                "parent_name": "",
+                "name": "dirichlet_complex(double *, int, double *)",
+                "file": "C:/Users/xcass/OneDrive/Documents/LBLGXE_v15/src/LBLc.c",
+                "line": 685,
+                "column": 6
+            }
+        ]
     }
 ]
